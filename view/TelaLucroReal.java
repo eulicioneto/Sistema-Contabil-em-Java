@@ -1,3 +1,4 @@
+package view;
 
 import java.awt.Font;
 
@@ -598,8 +599,6 @@ public class TelaLucroReal extends JPanel {
     public JButton getJButtonVoltar() {
          if (voltar == null) { 
             voltar = new JButton("Voltar"); voltar.setBounds( 360, 585, 120, 30 ); 
-            voltar.addActionListener(e -> { frame.setContentPane( new MenuInicial(frame) ); frame.revalidate(); frame.repaint(); }
-        ); 
         }
           return voltar; 
         }

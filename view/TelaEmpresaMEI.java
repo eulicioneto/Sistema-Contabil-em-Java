@@ -1,3 +1,4 @@
+package view;
 import java.awt.Font;
 
 import javax.swing.JButton;
@@ -56,54 +57,41 @@ public class TelaEmpresaMEI extends JPanel {
 
         this.setLayout(null);
 
-        // Título
         this.add(getLabelTitulo());
 
-        // CNPJ
         this.add(getLabelCnpj());
         this.add(getTextFieldCnpj());
 
-        // Razão Social
         this.add(getLabelRazaoSocial());
         this.add(getTextFieldRazaoSocial());
 
-        // Nome Fantasia
         this.add(getLabelNomeFantasia());
         this.add(getTextFieldNomeFantasia());
 
-        // Município
         this.add(getLabelMunicipio());
         this.add(getTextFieldMunicipio());
 
-        // Estado
         this.add(getLabelEstado());
         this.add(getTextFieldEstado());
 
-        // Ocupação Principal
         this.add(getLabelOcupacaoPrincipal());
         this.add(getTextFieldOcupacaoPrincipal());
 
-        // Faturamento Anual
         this.add(getLabelFaturamentoAnual());
         this.add(getTextFieldFaturamentoAnual());
 
-        // Faturamento Mensal
         this.add(getLabelFaturamentoMensal());
         this.add(getTextFieldFaturamentoMensal());
 
-        // Valor Mensal do DAS
         this.add(getLabelValorMensalDoDAS());
         this.add(getTextFieldValorMensalDoDAS());
 
-        // Indicador de Funcionários
         this.add(getLabelIndicadorDeExistenciaDeFuncionarios());
         this.add(getTextFieldIndicadorDeExistenciaDeFuncionarios());
 
-        // Data de Abertura
         this.add(getLabelDataDeAbertura());
         this.add(getTextFieldDataDeAbertura());
 
-        // Botão
         this.add(getJButton());
         this.add(getJButtonVoltar());
     }
@@ -482,8 +470,6 @@ public class TelaEmpresaMEI extends JPanel {
     public JButton getJButtonVoltar() {
          if (voltar == null) { 
             voltar = new JButton("Voltar"); voltar.setBounds( 360, 480, 120, 30 ); 
-            voltar.addActionListener(e -> { frame.setContentPane( new MenuInicial(frame) ); frame.revalidate(); frame.repaint(); }
-        ); 
         }
           return voltar; 
         }

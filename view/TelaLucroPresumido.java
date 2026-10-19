@@ -1,3 +1,4 @@
+package view;
 import java.awt.Font;
 
 import javax.swing.JButton;
@@ -125,7 +126,7 @@ public class TelaLucroPresumido extends JPanel {
         this.add(getTextFieldDataInicio());
 
         // Botão
-        this.add(getJButton());
+        this.add(getJButtonCadastrar());
         this.add(getJButtonVoltar());
     }
 
@@ -578,7 +579,7 @@ public class TelaLucroPresumido extends JPanel {
     }
 
 
-    public JButton getJButton() {
+    public JButton getJButtonCadastrar() {
 
         if (cadastrar == null) {
 
@@ -595,8 +596,6 @@ public class TelaLucroPresumido extends JPanel {
     public JButton getJButtonVoltar() {
          if (voltar == null) { 
             voltar = new JButton("Voltar"); voltar.setBounds( 360, 585, 120, 30 ); 
-            voltar.addActionListener(e -> { frame.setContentPane( new MenuInicial(frame) ); frame.revalidate(); frame.repaint(); }
-        ); 
         }
           return voltar; 
         }

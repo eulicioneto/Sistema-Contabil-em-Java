@@ -8,6 +8,11 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
+import view.TelaEmpresaMEI;
+import view.TelaLucroPresumido;
+import view.TelaLucroReal;
+import view.TelaSimplesNacional;
+
 public class MenuInicial extends JPanel {
 
     private JLabel titulo;

@@ -1,6 +1,8 @@
+package view;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.Font;
@@ -344,8 +346,6 @@ public JLabel getLabelNumeroDeFuncionarios() {
     public JButton getJButtonVoltar() {
          if (voltar == null) { 
             voltar = new JButton("Voltar"); voltar.setBounds( 360, 520, 120, 30 ); 
-            voltar.addActionListener(e -> { frame.setContentPane( new MenuInicial(frame) ); frame.revalidate(); frame.repaint(); }
-        ); 
         }
           return voltar; 
         }

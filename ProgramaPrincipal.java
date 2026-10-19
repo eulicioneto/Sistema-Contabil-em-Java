@@ -1,6 +1,11 @@
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import model.EmpresaLucroPresumido;
+import model.EmpresaLucroReal;
+import model.EmpresaMEI;
+import model.EmpresaSimplesNacional;
+
 public class ProgramaPrincipal {
     public static void main(String[] args) {
 
